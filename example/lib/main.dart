@@ -69,7 +69,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('galaxy task'),
         ),
         body: SizedBox(
           width: double.infinity,
@@ -80,17 +80,17 @@ class MyAppState extends State<MyApp> {
                   children: [
                     MaterialButton(
                       onPressed: _requestLocationPermission,
-                      child: const Text('Request location permission'),
+                      child: const Text('take location permission'),
                     ),
                     if (Platform.isAndroid) ...[
-                      const Text('Permission on android is only needed starting from sdk 33.'),
+                    //  const Text('Permission on android is only needed '),
                     ],
                     MaterialButton(
                       onPressed: _requestNotificationPermission,
-                      child: const Text('Request Notification permission'),
+                      child: const Text('get Notification permission'),
                     ),
                     MaterialButton(
-                      child: const Text('Send notification'),
+                      child: const Text(' notification'),
                       onPressed: () => sendNotification('Hello from another world'),
                     ),
                     MaterialButton(
